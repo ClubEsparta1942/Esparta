@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Club Atlético Esparta · Mercedes, desde 1942</title>
+  <meta name="description" content="Club Atlético Esparta de Mercedes, Soriano. Fundado en 1942. Básquetbol, vóley, judo, tai chi y sala de musculación.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="imagenes/escudo/escudo.png" type="image/png">
+</head>
+<body>
+  <!--
+    AVISO: los datos marcados con "FICTICIO" son de ejemplo y hay que reemplazarlos por los reales.
+    Datos reales: fundación (16/6/1942), 80 aniversario, gimnasio "16 de Junio", piso flotante, dirección,
+    celular, redes, disciplinas, horarios y profes, cuentas de Instagram, noticias y fixture.
+  -->
+
+  <!-- ===== Navegación ===== -->
+  <header class="nav" id="nav">
+    <!-- AVISO DE BORRADOR: borrar este <div> cuando todos los datos sean reales -->
+    <div class="draft">Versión de prueba · Algunos datos son de ejemplo y se van a reemplazar por los reales.</div>
+    <div class="container nav__inner">
+      <a href="#inicio" class="nav__brand">
+        <img src="imagenes/escudo/escudo.png" alt="" width="35" height="44">
+        <span>Club Atlético Esparta<small>Mercedes · desde 1942</small></span>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav__links" id="navLinks">
+        <a href="#etapas">El club para vos</a>
+        <a href="#horarios">Horarios</a>
+        <a href="#basquet">Básquet</a>
+        <a href="#noticias">Noticias</a>
+        <a href="#socio">Hacete socio</a>
+        <a href="https://wa.me/59899084346" class="btn btn--wa btn--small" target="_blank" rel="noopener">Escribinos</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Portada ===== -->
+  <section class="hero" id="inicio">
+    <div class="container">
+      <div class="hero__grid">
+        <div>
+          <p class="eyebrow">Club Atlético Esparta · Mercedes, desde 1942</p>
+          <h1>Un club de barrio con <em>corazón amarillo.</em></h1>
+          <p class="hero__lead">Básquetbol, vóley, judo, tai chi y sala de musculación. Hace más de 80 años que la Familia Espartana se encuentra en el Gimnasio 16 de Junio.</p>
+          <div class="promo">
+            <div>
+              <div class="promo__tag">Para empezar</div>
+              <div class="promo__title">Tu primera clase<br>en cualquier actividad</div>
+            </div>
+            <div class="promo__big">GRATIS<small>SIN COMPROMISO</small></div>
+          </div>
+          <div class="hero__actions">
+            <a href="#socio" class="btn btn--yellow">Quiero asociarme</a>
+            <a href="https://wa.me/59899084346" class="btn btn--wa" target="_blank" rel="noopener">Escribinos por WhatsApp</a>
+            <a href="#horarios" class="btn btn--ghost">Ver horarios →</a>
+          </div>
+        </div>
+        <div class="collage">
+          <figure class="collage__item collage__item--wide">
+            <img src="imagenes/portada/portada.jpg" alt="Cancha del Gimnasio 16 de Junio con el nuevo piso flotante" width="851" height="315">
+          </figure>
+          <div class="collage__item collage__item--crest">
+            <img src="imagenes/escudo/escudo.png" alt="Escudo del Club Atlético Esparta" width="274" height="352">
+          </div>
+          <a href="#basquet" class="collage__item collage__item--next hero__next" id="heroNext">
+            <b>Primera · Fixture</b>
+            <span class="teams">Mirá los partidos de La Amarilla</span>
+            <span class="go">Ver fixture →</span>
+          </a>
+        </div>
+      </div>
+      <ul class="stats">
+        <li><strong data-count="1942">0</strong><span>Año de fundación</span></li>
+        <li><strong data-count="84">0</strong><span>Años de historia</span></li>
+        <li><strong data-count="5">0</strong><span>Disciplinas</span></li>
+        <!-- FICTICIO -->
+        <li><strong data-count="420">0</strong><span>Socios y socias</span></li>
+      </ul>
+    </div>
+    <svg class="wave wave--bottom" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30 C 240 60 480 0 720 25 C 960 50 1200 10 1440 30 L1440 60 L0 60 Z" fill="#ffe11a"/></svg>
+  </section>
+
+  <!-- ===== Franja de disciplinas ===== -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Básquetbol</span><span>Vóley</span><span>Judo</span><span>Tai chi</span><span>Musculación</span><span>Formativas</span><span>Femenino</span><span>Maxi +35</span>
+      <span>Básquetbol</span><span>Vóley</span><span>Judo</span><span>Tai chi</span><span>Musculación</span><span>Formativas</span><span>Femenino</span><span>Maxi +35</span>
+    </div>
+  </div>
+
+  <!-- ===== Etapas ===== -->
+  <section class="section" id="etapas">
+    <div class="container">
+      <p class="eyebrow">Un club para toda la vida</p>
+      <h2>Hay un lugar en Esparta<br>para cada edad.</h2>
+      <p class="lead">Desde la escuelita hasta el maxi básquet: actividades pensadas para cada etapa, con profes que acompañan dentro y fuera de la cancha.</p>
+      <div class="stages">
+        <article class="stage">
+          <span class="stage__age">6–12</span>
+          <span class="stage__tag">6 a 12 años</span>
+          <h3>Primeros pasos en el deporte</h3>
+          <p>Leoncitos, premini y mini de básquet, y vóley sub 12. Coordinación, juego y amigos para toda la vida.</p>
+          <div class="stage__links"><a href="#horarios">Ver horarios →</a><a href="#socio">Consultar</a></div>
+        </article>
+        <article class="stage">
+          <span class="stage__age">13–17</span>
+          <span class="stage__tag">Adolescentes</span>
+          <h3>Competir y pertenecer</h3>
+          <p>Preinfantiles, infantiles, cadetes y juveniles de básquet, y vóley para mayores de 12. Torneos y el orgullo de vestir la amarilla.</p>
+          <div class="stage__links"><a href="#horarios">Ver horarios →</a><a href="#socio">Consultar</a></div>
+        </article>
+        <article class="stage">
+          <span class="stage__age">18+</span>
+          <span class="stage__tag">Adultos</span>
+          <h3>Primera y Femenino</h3>
+          <p>Nuestros equipos mayores representan al club en la liga. Y para entrenar a tu ritmo, Acción Gym.</p>
+          <div class="stage__links"><a href="#basquet">Ver básquet →</a><a href="#horarios">Horarios</a></div>
+        </article>
+        <article class="stage">
+          <span class="stage__age">+35</span>
+          <span class="stage__tag">Maxi básquet</span>
+          <h3>No colgamos las zapatillas</h3>
+          <p>Esparta +35: básquet, amistad y los infaltables terceros tiempos. 🍻</p>
+          <div class="stage__links"><a href="https://www.instagram.com/esparta.maxibasket/" target="_blank" rel="noopener">@esparta.maxibasket →</a></div>
+        </article>
+        <article class="stage">
+          <span class="stage__age">∞</span>
+          <span class="stage__tag">Todas las edades</span>
+          <h3>Bienestar y disciplina</h3>
+          <p>Tai chi para el equilibrio y la calma, y judo en nuestro dojo, con judokas que llegan a competencias internacionales.</p>
+          <div class="stage__links"><a href="#horarios">Ver horarios →</a><a href="#socio">Consultar</a></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Cuentas de Instagram de cada actividad ===== -->
+  <section class="section section--white" id="cuentas">
+    <div class="container">
+      <p class="eyebrow">Seguinos</p>
+      <h2>Cada actividad, su comunidad.</h2>
+      <p class="lead">Cada equipo y disciplina de Esparta tiene su propia cuenta. Seguí la tuya y enterate de todo. También está la cuenta oficial del club, <a href="https://www.instagram.com/clubatleticoespartamercedes/" target="_blank" rel="noopener">@clubatleticoespartamercedes</a>.</p>
+      <div class="news accounts-grid">
+        <article class="news-card account-card">
+          <a class="news-card__img is-top" href="https://www.instagram.com/espartabasquetbol/" target="_blank" rel="noopener"><img src="imagenes/cuentas/primera.jpg" alt="Afiche Seguí a la Primera en @espartabasquetbol" loading="lazy"></a>
+          <div class="news-card__body">
+            <div class="news-card__meta"><span class="chip">Básquet</span><span class="handle">@espartabasquetbol</span></div>
+            <h3>Primera · La Amarilla</h3>
+            <p>Todo lo que pasa dentro y fuera de la cancha: fixture, resultados, MVP de cada partido y la previa de cada fecha. 🦁</p>
+            <a class="btn btn--ig btn--small" href="https://www.instagram.com/espartabasquetbol/" target="_blank" rel="noopener">Seguir en Instagram →</a>
+          </div>
+        </article>
+        <article class="news-card account-card">
+          <a class="news-card__img" href="https://www.instagram.com/espartabasketfemenino/" target="_blank" rel="noopener"><img src="imagenes/cuentas/femenino.jpg" alt="Plantel de básquet femenino de Esparta" loading="lazy"></a>
+          <div class="news-card__body">
+            <div class="news-card__meta"><span class="chip">Básquet</span><span class="handle">@espartabasketfemenino</span></div>
+            <h3>Básquet femenino</h3>
+            <p>En la LRBS 2026 llegamos a semifinales. Somos más que un equipo: somos familia. ¡Gracias jugadoras, familias y cuerpo técnico! 2027 🔜🦁</p>
+            <a class="btn btn--ig btn--small" href="https://www.instagram.com/espartabasketfemenino/" target="_blank" rel="noopener">Seguir en Instagram →</a>
+          </div>
+        </article>
+        <article class="news-card account-card">
+          <a class="news-card__img" href="https://www.instagram.com/esparta.maxibasket/" target="_blank" rel="noopener"><img src="imagenes/cuentas/maxi.jpg" alt="Plantel de Maxi básquet de Esparta" loading="lazy"></a>
+          <div class="news-card__body">
+            <div class="news-card__meta"><span class="chip">Básquet</span><span class="handle">@esparta.maxibasket</span></div>
+            <h3>Maxi básquet +35</h3>
+            <p>La cuenta oficial de Esparta +35: partidos, convocatorias y los fundamentales terceros tiempos. 🍻</p>
+            <a class="btn btn--ig btn--small" href="https://www.instagram.com/esparta.maxibasket/" target="_blank" rel="noopener">Seguir en Instagram →</a>
+          </div>
+        </article>
+        <article class="news-card account-card">
+          <a class="news-card__img" href="https://www.instagram.com/voley_club_a_esparta/" target="_blank" rel="noopener"><img src="imagenes/cuentas/voley.jpg" alt="Equipo de vóley de Esparta" loading="lazy"></a>
+          <div class="news-card__body">
+            <div class="news-card__meta"><span class="chip">Vóley</span><span class="handle">@voley_club_a_esparta</span></div>
+            <h3>Esparta Vóley</h3>
+            <p>Sub 12 y mayores de 12, con el profe Fernando Vera. Torneos, entrenamientos y toda la actividad de la red. 🏐</p>
+            <a class="btn btn--ig btn--small" href="https://www.instagram.com/voley_club_a_esparta/" target="_blank" rel="noopener">Seguir en Instagram →</a>
+          </div>
+        </article>
+        <article class="news-card account-card">
+          <a class="news-card__img is-top" href="https://www.instagram.com/clubatleticoespartamercedes/" target="_blank" rel="noopener"><img src="imagenes/cuentas/taichi.jpg" alt="Clase de tai chi en Esparta" loading="lazy"></a>
+          <div class="news-card__body">
+            <div class="news-card__meta"><span class="chip">Bienestar</span><span class="handle">@clubatleticoespartamercedes</span></div>
+            <h3>Tai chi</h3>
+            <p>Martes y jueves de 17:30 a 18:30 h. Movimiento, equilibrio y calma para todas las edades. Las novedades salen en la cuenta del club.</p>
+            <a class="btn btn--ig btn--small" href="https://www.instagram.com/clubatleticoespartamercedes/" target="_blank" rel="noopener">Seguir en Instagram →</a>
+          </div>
+        </article>
+        <article class="news-card account-card">
+          <a class="news-card__img is-gym" href="https://www.instagram.com/acciongym/" target="_blank" rel="noopener"><img src="imagenes/cuentas/acciongym.jpg" alt="Los profes de Acción Gym" loading="lazy"></a>
+          <div class="news-card__body">
+            <div class="news-card__meta"><span class="chip">Gimnasio</span><span class="handle">@acciongym</span></div>
+            <h3>Acción Gym</h3>
+            <p>La sala de musculación del club. Seguilos para conocer horarios, planes y rutinas.</p>
+            <a class="btn btn--ig btn--small" href="https://www.instagram.com/acciongym/" target="_blank" rel="noopener">Seguir en Instagram →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Horarios (según el afiche "Horarios semanales" del club) ===== -->
+  <section class="section" id="horarios">
+    <div class="container">
+      <p class="eyebrow">Horarios semanales</p>
+      <h2>¿Qué te gustaría hacer?</h2>
+      <p class="lead">Elegí una disciplina y mirá cuándo entrenamos. Si tenés dudas, escribinos y te orientamos.</p>
+      <div class="filters" role="tablist" aria-label="Filtrar horarios">
+        <button class="filter is-active" data-filter="todos">Todos</button>
+        <button class="filter" data-filter="basquet">Básquetbol</button>
+        <button class="filter" data-filter="otras">Otras disciplinas</button>
+      </div>
+      <div class="table-wrap">
+        <table class="schedule">
+          <thead>
+            <tr><th>Actividad</th><th>Días</th><th>Horario</th><th>Profe / DT</th></tr>
+          </thead>
+          <tbody>
+            <tr data-cat="basquet"><td><strong>Formativas · Leoncitos</strong></td><td>Mar · Jue</td><td>17:30 – 18:30</td><td>Oscar González</td></tr>
+            <tr data-cat="basquet"><td><strong>Formativas · Premini y Mini</strong></td><td>Lun · Mié · Vie</td><td>18:30 – 19:30</td><td>Nicolás Olivera</td></tr>
+            <tr data-cat="basquet"><td><strong>Formativas · Preinfantiles</strong></td><td>Lun · Mié · Vie<br>Mar · Jue</td><td>19:30 – 20:45<br>19:45 – 20:45</td><td>Nicolás Olivera</td></tr>
+            <tr data-cat="basquet"><td><strong>Formativas · Infantiles, Cadetes y Juveniles</strong></td><td>Lun · Mié · Vie<br>Mar · Jue</td><td>20:45 – 22:00<br>21:00 – 22:15</td><td>Nicolás Olivera, Martín López y Federico Sainz</td></tr>
+            <tr data-cat="basquet"><td><strong>Básquet femenino</strong></td><td>Mar · Jue<br>Sáb</td><td>20:30 – 22:00<br>11:00</td><td>Huamani Millán y Federico Sainz</td></tr>
+            <tr data-cat="basquet"><td><strong>Maxi básquet +35</strong></td><td>Lun · Mié · Vie<br>Sáb</td><td>22:00<br>13:30</td><td>–</td></tr>
+            <tr data-cat="basquet"><td><strong>Primera</strong></td><td><span class="pending">A confirmar</span></td><td><span class="pending">Consultá en el club</span></td><td>–</td></tr>
+            <tr data-cat="otras"><td><strong>Vóley · Sub 12</strong></td><td>Mar · Jue</td><td>18:30 – 19:30</td><td>Fernando Vera</td></tr>
+            <tr data-cat="otras"><td><strong>Vóley · Mayores de 12</strong></td><td>Mar · Jue</td><td>19:30 – 20:30</td><td>Fernando Vera</td></tr>
+            <tr data-cat="otras"><td><strong>Tai chi</strong></td><td>Mar · Jue</td><td>17:30 – 18:30</td><td>–</td></tr>
+            <tr data-cat="otras"><td><strong>Judo</strong></td><td><span class="pending">A confirmar</span></td><td><span class="pending">Consultá en el club</span></td><td>–</td></tr>
+            <tr data-cat="otras"><td><strong>Acción Gym (musculación)</strong></td><td><span class="pending">Ver en su Instagram</span></td><td><a href="https://www.instagram.com/acciongym/" target="_blank" rel="noopener">@acciongym</a></td><td>–</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Básquet + Fixture (los partidos se cargan desde fixture.js) ===== -->
+  <section class="section section--white" id="basquet">
+    <div class="container hoops">
+      <div>
+        <p class="eyebrow">Básquetbol</p>
+        <h2>El básquet es nuestra identidad.</h2>
+        <p class="lead">Desde 1942 el básquetbol es el corazón de Esparta. Cuando juega La Amarilla 🦁, el Gimnasio 16 de Junio se llena de familia, de barrio y de aliento.</p>
+        <div class="hoops__stats">
+          <div><strong>4</strong><span>equipos: formativas, Primera, femenino y +35</span></div>
+          <div><strong>9</strong><span>partidos de Primera en la primera fase</span></div>
+          <div><strong>1942</strong><span>jugando desde el primer día del club</span></div>
+        </div>
+        <div class="teams">
+          <a href="https://www.instagram.com/espartabasquetbol/" target="_blank" rel="noopener">Primera · La Amarilla <span>@espartabasquetbol →</span></a>
+          <a href="https://www.instagram.com/espartabasketfemenino/" target="_blank" rel="noopener">Femenino <span>@espartabasketfemenino →</span></a>
+          <a href="https://www.instagram.com/esparta.maxibasket/" target="_blank" rel="noopener">Maxi básquet +35 <span>@esparta.maxibasket →</span></a>
+        </div>
+        <a href="#socio" class="btn btn--dark">Sumate a las formativas</a>
+      </div>
+      <div>
+        <div class="next-match" id="nextMatch" hidden></div>
+        <div class="fixture" id="espartaFixture"></div>
+        <details class="league">
+          <summary>Ver el fixture completo de la liga</summary>
+          <div id="leagueFixture"></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Historia (FICTICIO salvo 1942, 2022, el gimnasio y el piso flotante) ===== -->
+  <section class="section section--dark" id="historia">
+    <svg class="wave wave--top" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30 C 240 60 480 0 720 25 C 960 50 1200 10 1440 30 L1440 60 L0 60 Z" fill="#ffffff"/></svg>
+    <div class="container history">
+      <div>
+        <p class="eyebrow">Orgullo espartano</p>
+        <h2>Más de 80 años haciendo club.</h2>
+        <p>El Club Atlético Esparta nació en Mercedes el <strong>16 de junio de 1942</strong>, de la mano de un grupo de jóvenes del barrio que querían un lugar propio para jugar al básquetbol. Eligieron el nombre de Esparta porque representaba lo que soñaban: garra, disciplina y unión.</p>
+        <p>Con el esfuerzo de socios y vecinos levantaron en <strong>Leandro Gómez 1072</strong> su casa, el <strong>Gimnasio 16 de Junio</strong>. Hoy la Familia Espartana sigue creciendo, con más disciplinas, más gurises y gurisas, y el mismo espíritu de siempre.</p>
+        <a href="#contacto" class="btn btn--yellow">Vení a conocernos</a>
+      </div>
+      <ol class="timeline">
+        <li><span>1942</span><div><h3>Nace Esparta</h3><p>Fundación del club, el 16 de junio.</p></div></li>
+        <li><span>1958</span><div><h3>Cancha propia</h3><p>Se inaugura la cancha en Leandro Gómez.</p></div></li>
+        <li><span>1971</span><div><h3>Primer título</h3><p>Campeones de la Liga Mercedaria de Básquetbol.</p></div></li>
+        <li><span>1996</span><div><h3>Gimnasio techado</h3><p>Una gran campaña de socios hace realidad el techo.</p></div></li>
+        <li><span>2022</span><div><h3>80 años</h3><p>Celebramos ocho décadas de historia.</p></div></li>
+        <li><span>Hoy</span><div><h3>Piso flotante</h3><p>El Gimnasio 16 de Junio estrena piso. Los sueños están para cumplirse.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===== Noticias =====
+       Para agregar una noticia: copiá un <article class="news-card"> completo,
+       cambiá la imagen, la fecha, el título, el resumen y el texto dentro de <div class="news__full">. -->
+  <section class="section" id="noticias">
+    <div class="container">
+      <p class="eyebrow">Novedades</p>
+      <h2>Un club que se vive todos los días.</h2>
+      <p class="lead">Eventos, beneficios y todo lo que pasa en Esparta.</p>
+      <div class="news">
+
+        <article class="news-card">
+          <div class="news-card__img"><img src="imagenes/noticias/1.jpg" alt="Afiche del Almuerzo Show con Emiliano Muñoz y el Zurdo Bessio" loading="lazy" width="1406" height="1758"></div>
+          <div class="news-card__body">
+            <div class="news-card__meta"><span class="chip">Evento</span><time datetime="2026-11-15T12:00">Domingo 15 de noviembre · 12 h</time></div>
+            <h3>Almuerzo Show con Emiliano Muñoz y el "Zurdo" Bessio</h3>
+            <p>Buena música, encuentros y una jornada entre amigos y en familia en nuestro club. Ticket $1.000, lugares limitados.</p>
+            <button class="btn btn--dark btn--small" type="button" data-news>Leer más</button>
+          </div>
+          <div class="news__full">
+            <p><strong>¡En Esparta se viene un domingo con mucho ritmo!</strong> 💛💙</p>
+            <p>El <strong>domingo 15 de noviembre</strong> nos encontramos en nuestro Club para compartir un gran <strong>Almuerzo Show</strong> junto a <strong>Emiliano Muñoz</strong> y el <strong>"Zurdo" Bessio</strong> 🎶🙌</p>
+            <p>Buena música, encuentros y la alegría de volver a compartir una jornada entre amigos y en familia. ¡De esos momentos que se disfrutan mucho más juntos!</p>
+            <ul>
+              <li>🕛 <strong>Hora:</strong> 12 h</li>
+              <li>🍽️ <strong>Menú:</strong> pollo arrollado, ensalada y postre</li>
+              <li>🎟️ <strong>Ticket:</strong> $1.000 · Lugares limitados</li>
+              <li>📲 <strong>Reservas:</strong> 099 084 346, con directivos o en cantina</li>
+            </ul>
+            <p>Armá tu mesa, invitá a tu gente y ¡no te olvides de traer el menaje!</p>
+            <p><strong>Labirel S.A.</strong> invita a compartir este gran encuentro 🤝</p>
+            <p><em>¡Preparamos la mesa y ponemos la música! ¿Venís?</em> 💛💙</p>
+            <p class="tags">#Esparta #FamiliaEspartana #AlmuerzoShow</p>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <div class="news-card__img"><img src="imagenes/noticias/2.jpg" alt="Afiche de venta de pastas caseras: ravioles y tallarines a 230 pesos" loading="lazy" width="1406" height="1758"></div>
+          <div class="news-card__body">
+            <div class="news-card__meta"><span class="chip chip--past">Beneficio</span><time datetime="2026-10-10">Sábado 10 de octubre</time></div>
+            <h3>Venta de pastas caseras a beneficio del club</h3>
+            <p>Ravioles y tallarines caseros a $230. Cada compra suma para seguir creciendo. ¡Una vez más, hacemos club juntos!</p>
+            <button class="btn btn--dark btn--small" type="button" data-news>Leer más</button>
+          </div>
+          <div class="news__full">
+            <p><strong>💛💙 Una vez más, hacemos club juntos 💛💙</strong></p>
+            <p>Este <strong>sábado 10</strong> tenemos <strong>venta de pastas caseras</strong> a beneficio de nuestro Club 🍝</p>
+            <p>Cada reserva, cada compra y cada gesto de apoyo suma a nuestro club, para seguir creciendo, acompañando a nuestros deportistas y construyendo juntos esta historia 💪🏽</p>
+            <ul>
+              <li>🥟 <strong>Ravioles:</strong> $230 el ciento</li>
+              <li>🍝 <strong>Tallarines:</strong> $230 el kilo</li>
+              <li>📲 <strong>Reservas:</strong> hasta el jueves 8 al 099 084 346, con directivos y en cantina</li>
+              <li>📍 <strong>Retiro:</strong> desde las 11 h en el Club</li>
+            </ul>
+            <p>Porque cuando nos apoyás, también estás haciendo tu parte 💛💙</p>
+            <p class="tags">#ClubAtléticoEsparta #Esparta #FamiliaEspartana #PastasCaseras</p>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <div class="news-card__img"><img src="imagenes/noticias/3.jpg" alt="Invitación a Los Juegos del Barrio 2026 en el Club Atlético Esparta" loading="lazy" width="900" height="1600"></div>
+          <div class="news-card__body">
+            <div class="news-card__meta"><span class="chip chip--past">Comunidad</span><time datetime="2026-10-02">2 y 3 de octubre</time></div>
+            <h3>Los Juegos del Barrio llegan a Esparta</h3>
+            <p>Dos jornadas gratuitas de deporte, charlas y cultura, con deportistas invitados como Demián Álvarez y Aldana Sabatel.</p>
+            <button class="btn btn--dark btn--small" type="button" data-news>Leer más</button>
+          </div>
+          <div class="news__full">
+            <p><strong>¡Esparta es parte de todo esto!</strong> 🔥✨ Falta menos y vos tenés que participar. <strong>Todas las actividades son gratis</strong> 🙌🏼</p>
+            <p>Los días <strong>2 y 3 de octubre</strong>, nuestro Club es co-anfitrión de dos jornadas para encontrarnos, compartir y disfrutar en comunidad, con propuestas para niños, adolescentes, jóvenes, adultos, familias y vecinos: actividades deportivas, juegos, charlas, exhibiciones y propuestas artísticas y culturales.</p>
+            <table>
+              <thead><tr><th colspan="3">Viernes 2 de octubre</th></tr></thead>
+              <tbody>
+                <tr><td>14 h</td><td>Charla con el remero Marcos Sarraute</td><td>Jóvenes</td></tr>
+                <tr><td>16 h</td><td>Newcom</td><td>Adultos</td></tr>
+                <tr><td>17:45 h</td><td>Yoga</td><td>Libre</td></tr>
+              </tbody>
+            </table>
+            <table>
+              <thead><tr><th colspan="3">Sábado 3 de octubre</th></tr></thead>
+              <tbody>
+                <tr><td>10:30 h</td><td>Campus de básquetbol</td><td>U14 mixto</td></tr>
+                <tr><td>12 h</td><td>Charla con Demián Álvarez</td><td>Libre</td></tr>
+                <tr><td>12:30 h</td><td>Campus de básquetbol</td><td>Mayores mixto</td></tr>
+                <tr><td>14:30 h</td><td>Charla "Deporte femenino" con Débora Serrón y Aldana Sabatel</td><td>Mujeres</td></tr>
+                <tr><td>15:30 h</td><td>Campus de vóleibol</td><td>U15 mixto</td></tr>
+                <tr><td>17 h</td><td>Campus de vóleibol</td><td>Mayores mixto</td></tr>
+              </tbody>
+            </table>
+            <p><strong>Deportistas invitados</strong></p>
+            <ul>
+              <li><strong>Marcos Sarraute:</strong> remero olímpico, ganador en los Juegos Odesur.</li>
+              <li><strong>Demián Álvarez:</strong> basquetbolista de amplia trayectoria nacional e internacional.</li>
+              <li><strong>Débora Serrón:</strong> referente del vóleibol y beach vóley uruguayo.</li>
+              <li><strong>Aldana Sabatel:</strong> principal maratonista uruguaya en la actualidad.</li>
+            </ul>
+            <p class="tags">#deporte #losjuegosdelbarrio</p>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="briefs">
+        <p class="brief"><b>Judo:</b> un judoka de nuestro dojo viajó a Rosario, Argentina, para competir en los Juegos Suramericanos en la categoría -73 kg. ¡Orgullo espartano!</p>
+        <p class="brief"><b>Vóley:</b> el Gimnasio 16 de Junio recibió el Torneo Abierto de Vóley categoría mayores, con equipos de toda la zona.</p>
+      </div>
+      <p class="more" style="margin-top:1.5rem;color:var(--texto-suave)">Más novedades en nuestro <a href="https://www.instagram.com/clubatleticoespartamercedes/" target="_blank" rel="noopener">Instagram</a> y <a href="https://www.facebook.com/clubatleticoespartamercedes/" target="_blank" rel="noopener">Facebook</a>.</p>
+    </div>
+  </section>
+
+  <dialog class="news-modal" id="newsModal" aria-labelledby="newsModalTitle">
+    <button class="news-modal__close" type="button" aria-label="Cerrar" data-close>×</button>
+    <div class="news-modal__inner">
+      <div class="news-modal__img"><img alt=""></div>
+      <div class="news-modal__text">
+        <div class="news-card__meta"></div>
+        <h3 id="newsModalTitle"></h3>
+        <div class="news-modal__content"></div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- ===== Hacerte socio ===== -->
+  <section class="section section--white" id="socio">
+    <div class="container join">
+      <div>
+        <p class="eyebrow">Hacete socio</p>
+        <h2>Ser espartano es así de simple.</h2>
+        <p class="lead">Tres pasos y ya sos parte de la Familia Espartana.</p>
+        <ol class="steps">
+          <li><div><h3>Escribinos o pasá por el club</h3><p>Por WhatsApp al 099 084 346, con directivos o en cantina.</p></div></li>
+          <li><div><h3>Elegí tu actividad</h3><p>Te contamos horarios y cuotas. La primera clase es gratis.</p></div></li>
+          <li><div><h3>Completá tu ficha y empezá</h3><p>Traé tus datos y listo: ya sos de Esparta. 💛💙</p></div></li>
+        </ol>
+      </div>
+      <form class="form" id="joinForm" novalidate>
+        <h3>Quiero sumarme</h3>
+        <p>Completá tus datos y se abre WhatsApp con el mensaje listo para enviar.</p>
+        <label>Nombre y apellido
+          <input type="text" name="nombre" required>
+        </label>
+        <label>Teléfono
+          <input type="tel" name="telefono">
+        </label>
+        <label>Actividad que te interesa
+          <select name="actividad">
+            <option>Básquetbol – Leoncitos</option>
+            <option>Básquetbol – Premini y Mini</option>
+            <option>Básquetbol – Preinfantiles</option>
+            <option>Básquetbol – Infantiles, Cadetes y Juveniles</option>
+            <option>Básquetbol – Primera</option>
+            <option>Básquetbol – Femenino</option>
+            <option>Maxi básquet +35</option>
+            <option>Vóley – Sub 12</option>
+            <option>Vóley – Mayores de 12</option>
+            <option>Judo</option>
+            <option>Tai chi</option>
+            <option>Acción Gym (musculación)</option>
+            <option>Solo ser socio/a</option>
+          </select>
+        </label>
+        <label>Mensaje
+          <textarea name="mensaje" rows="3"></textarea>
+        </label>
+        <button type="submit" class="btn btn--wa">Enviar por WhatsApp</button>
+        <p class="form__msg" id="formMsg" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== Contacto ===== -->
+  <section class="section" id="contacto">
+    <div class="container contact">
+      <div>
+        <p class="eyebrow">Contacto</p>
+        <h2>¿Hablamos?</h2>
+        <ul class="contact__list">
+          <li><span class="ic">📍</span><div><b>Dirección</b>Leandro Gómez 1072, Mercedes, Soriano</div></li>
+          <li><span class="ic">📲</span><div><b>Celular y WhatsApp</b><a href="https://wa.me/59899084346" target="_blank" rel="noopener">099 084 346</a></div></li>
+          <!-- FICTICIO -->
+          <li><span class="ic">✉️</span><div><b>Email</b><a href="mailto:contacto@clubesparta.com.uy">contacto@clubesparta.com.uy</a></div></li>
+          <li><span class="ic">🕕</span><div><b>Secretaría</b>Lun a Vie de 18 a 21 h</div></li>
+        </ul>
+        <div class="accounts">
+          <a href="https://www.instagram.com/clubatleticoespartamercedes/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/clubatleticoespartamercedes/" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.instagram.com/espartabasquetbol/" target="_blank" rel="noopener">🏀 Primera</a>
+          <a href="https://www.instagram.com/espartabasketfemenino/" target="_blank" rel="noopener">⛹️‍♀️ Femenino</a>
+          <a href="https://www.instagram.com/esparta.maxibasket/" target="_blank" rel="noopener">🍻 +35</a>
+          <a href="https://www.instagram.com/voley_club_a_esparta/" target="_blank" rel="noopener">🏐 Vóley</a>
+        </div>
+      </div>
+      <iframe class="map" title="Ubicación del Club Atlético Esparta"
+        src="https://www.google.com/maps?q=Leandro+G%C3%B3mez+1072,+Mercedes,+Soriano,+Uruguay&output=embed"
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <!-- ===== Preguntas frecuentes (respuestas a confirmar con el club) ===== -->
+  <section class="section section--white" id="preguntas">
+    <div class="container">
+      <p class="eyebrow">Preguntas frecuentes</p>
+      <h2>Lo que todos preguntan.</h2>
+      <div class="faq">
+        <details>
+          <summary>¿Cuánto sale la cuota?</summary>
+          <p>Depende de la actividad y de si sos socio o socia. Escribinos por WhatsApp al 099 084 346 y te pasamos los valores actualizados.</p>
+        </details>
+        <details>
+          <summary>¿Puedo probar antes de anotarme?</summary>
+          <p>¡Sí! La primera clase de cualquier actividad es gratis. Avisanos por WhatsApp qué día vas a venir.</p>
+        </details>
+        <details>
+          <summary>¿Desde qué edad pueden empezar los chicos?</summary>
+          <p>En básquet arrancan en Leoncitos y siguen por premini, mini, preinfantiles, infantiles, cadetes y juveniles. En vóley está la categoría sub 12. Consultanos qué categoría corresponde según la edad.</p>
+        </details>
+        <details>
+          <summary>¿Tengo que ser socio para hacer una actividad?</summary>
+          <p>Escribinos y te contamos las opciones para socios y no socios en cada disciplina.</p>
+        </details>
+        <details>
+          <summary>¿Dónde queda el club?</summary>
+          <p>En Leandro Gómez 1072, Mercedes, Soriano. Es el Gimnasio 16 de Junio.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="imagenes/escudo/escudo.png" alt="" width="50" height="64">
+          <div><strong>Club Atlético Esparta</strong>Mercedes, Soriano · Desde el 16 de junio de 1942</div>
+        </div>
+        <div>
+          <h4>El club</h4>
+          <ul>
+            <li><a href="#etapas">El club para vos</a></li>
+            <li><a href="#horarios">Horarios</a></li>
+            <li><a href="#basquet">Básquet y fixture</a></li>
+            <li><a href="#historia">Historia</a></li>
+            <li><a href="#noticias">Noticias</a></li>
+            <li><a href="#cuentas">Nuestras cuentas</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contacto</h4>
+          <ul>
+            <li>Leandro Gómez 1072</li>
+            <li><a href="https://wa.me/59899084346" target="_blank" rel="noopener">099 084 346</a></li>
+            <li><a href="https://www.instagram.com/clubatleticoespartamercedes/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/clubatleticoespartamercedes/" target="_blank" rel="noopener">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">© <span id="year"></span> Club Atlético Esparta · Mercedes, Soriano, Uruguay</div>
+    </div>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a class="wa-float" href="https://wa.me/59899084346" target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>
+  </a>
+
+  <script src="fixture.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
