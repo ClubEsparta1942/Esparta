@@ -110,7 +110,7 @@ function animateCount(el) {
 document.querySelectorAll("[data-count]").forEach(animateCount);
 
 // Aparición al hacer scroll
-const revealEls = document.querySelectorAll(".section h2, .stage, .news-card, .brief, .match, .timeline li, .steps li, .faq details, .form");
+const revealEls = document.querySelectorAll(".section h2, .news-card, .brief, .match, .timeline li, .steps li, .form");
 revealEls.forEach((el) => el.classList.add("reveal"));
 const io = new IntersectionObserver(
   (entries) =>
@@ -176,3 +176,44 @@ modal.querySelector("[data-close]").addEventListener("click", () => modal.close(
 modal.addEventListener("click", (e) => {
   if (e.target === modal) modal.close();
 });
+
+// Carrusel de beneficios: flechas, puntitos y avance automático
+(function () {
+  const root = document.getElementById("benefitsCarousel");
+  if (!root) return;
+  const track = root.querySelector(".carousel__track");
+  const slides = [...track.children];
+  const dots = root.querySelector(".carousel__dots");
+  dots.innerHTML = slides.map(() => "<span></span>").join("");
+  const step = () => slides[0].getBoundingClientRect().width + parseFloat(getComputedStyle(track).columnGap || 0);
+  const atEnd = () => track.scrollLeft + track.clientWidth >= track.scrollWidth - 5;
+  const go = (dir) => {
+    if (dir > 0 && atEnd()) track.scrollTo({ left: 0 });
+    else if (dir < 0 && track.scrollLeft <= 5) track.scrollTo({ left: track.scrollWidth });
+    else track.scrollBy({ left: dir * step() });
+  };
+  const marcarPunto = () => {
+    const i = Math.round(track.scrollLeft / step());
+    [...dots.children].forEach((d, k) => d.classList.toggle("is-active", k === Math.min(i, slides.length - 1)));
+  };
+  track.addEventListener("scroll", marcarPunto, { passive: true });
+  marcarPunto();
+  let reiniciar = () => {};
+  document.querySelectorAll("#beneficios .carousel__btn").forEach((b) =>
+    b.addEventListener("click", () => { go(+b.dataset.dir); reiniciar(); })
+  );
+
+  // Avanza solo cada 4 segundos, se pausa al pasar el mouse o tocarlo
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  let timer = null, pausado = false, visible = false;
+  reiniciar = () => {
+    clearInterval(timer);
+    timer = setInterval(() => { if (!pausado && visible) go(1); }, 4000);
+  };
+  root.addEventListener("mouseenter", () => (pausado = true));
+  root.addEventListener("mouseleave", () => (pausado = false));
+  track.addEventListener("touchstart", () => { pausado = true; }, { passive: true });
+  track.addEventListener("touchend", () => { setTimeout(() => (pausado = false), 5000); }, { passive: true });
+  new IntersectionObserver((e) => (visible = e[0].isIntersecting), { threshold: 0.3 }).observe(root);
+  reiniciar();
+})();
