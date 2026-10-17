@@ -95,16 +95,6 @@ h2 { font-size: clamp(2rem, 4.6vw, 3.2rem); margin-bottom: 1rem; }
 .hero__title em { font-style: normal; color: var(--amarillo); }
 .hero__lead { font-size: 1.15rem; color: rgba(255,255,255,.8); max-width: 34rem; margin-bottom: 1.8rem; }
 
-.promo {
-  display: inline-flex; align-items: center; gap: 1.2rem;
-  background: var(--crema); color: var(--azul-oscuro); border-radius: 16px;
-  padding: 1rem 1.3rem; margin-bottom: 1.8rem; box-shadow: 0 12px 30px rgba(0,0,0,.25);
-}
-.promo__tag { font-size: .68rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--azul); }
-.promo__title { font-weight: 800; font-size: 1.15rem; line-height: 1.2; }
-.promo__big { background: var(--azul-oscuro); color: var(--amarillo); border-radius: 12px; padding: .5rem .9rem; text-align: center; font-weight: 800; font-size: 1.8rem; line-height: 1; }
-.promo__big small { display: block; font-size: .62rem; letter-spacing: .1em; color: #fff; margin-top: .3rem; }
-.hero__actions { display: flex; flex-wrap: wrap; gap: .8rem; }
 
 /* Collage de la portada */
 .collage { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
@@ -151,15 +141,8 @@ h2 { font-size: clamp(2rem, 4.6vw, 3.2rem); margin-bottom: 1rem; }
 .schedule tbody tr:hover td { background: var(--amarillo-claro); }
 .schedule tr.is-hidden { display: none; }
 
-/* ===== Básquet ===== */
-.hoops { display: grid; grid-template-columns: 1fr 1.1fr; gap: 3.5rem; align-items: start; }
-.hoops__stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 2rem 0; }
-.hoops__stats strong { display: block; font-size: 2.6rem; font-weight: 800; color: var(--azul); line-height: 1; }
-.hoops__stats span { font-size: .85rem; color: var(--texto-suave); }
-.teams { display: grid; gap: .6rem; margin-bottom: 2rem; }
-.teams a { display: flex; justify-content: space-between; align-items: center; gap: 1rem; background: #fff; border-radius: 14px; padding: .9rem 1.2rem; text-decoration: none; font-weight: 700; box-shadow: var(--sombra); }
-.teams a span { font-weight: 600; color: var(--azul); font-size: .88rem; }
-.teams a:hover { outline: 2px solid var(--amarillo); }
+/* ===== Básquet: fixture ===== */
+.fixture-wrap { max-width: 900px; }
 
 .next-match {
   background: linear-gradient(135deg, var(--azul) 0%, var(--azul-oscuro) 100%); color: #fff;
@@ -377,7 +360,7 @@ h2 { font-size: clamp(2rem, 4.6vw, 3.2rem); margin-bottom: 1rem; }
   .nav__links.is-open { max-height: 480px; }
   .nav__links a:not(.btn) { padding: 1rem 16px; border-top: 1px solid var(--borde); }
   .nav__links .btn { margin: .8rem 16px 1rem; justify-content: center; }
-  .hero__grid, .hoops, .history, .join, .contact { grid-template-columns: 1fr; }
+  .hero__grid, .history, .join, .contact { grid-template-columns: 1fr; }
   .footer__grid { grid-template-columns: 1fr 1fr; }
   .footer__grid > :first-child { grid-column: 1 / -1; }
 }
@@ -396,7 +379,6 @@ h2 { font-size: clamp(2rem, 4.6vw, 3.2rem); margin-bottom: 1rem; }
   .timeline::before { left: 56px; }
   .timeline li { grid-template-columns: 44px 1fr; }
   .timeline li::before { left: 50px; }
-  .promo { flex-wrap: wrap; }
   .footer__grid { grid-template-columns: 1fr; }
 }
 @media (prefers-reduced-motion: reduce) {
