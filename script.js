@@ -27,6 +27,12 @@ function renderFixture() {
     } else if (!pendiente(p)) {
       tag = '<span class="tag">Jugado</span>';
     }
+    // Si hay planilla estadística, la etiqueta pasa a ser un link al PDF
+    if (p.planilla && !pendiente(p)) {
+      tag = tag.replace("<span", `<a href="${p.planilla}" target="_blank" rel="noopener" title="Ver la planilla estadística del partido"`)
+        .replace(/>([^<]*)<\/span>$/, '>$1 · Planilla ↗</a>')
+        .replace('class="tag', 'class="tag tag--link');
+    }
     return `<div class="match${p === proximo ? " is-next" : ""}">
       <span class="match__date"><span class="match__jornada">Jornada ${p.jornada}</span>${corta(d)} · ${FIXTURE_HORA}</span>
       <span class="match__teams">${marcador} <small>Cancha ${p.cancha}</small></span>
@@ -61,7 +67,9 @@ function renderFixture() {
       <tbody>${FIXTURE.filter((p) => p.jornada === j).map((p) => `
         <tr class="${esEsparta(p) ? "has-esparta" : ""}">
           <td>${corta(parse(p.fecha))}</td><td>${p.local}</td><td>${p.visitante}</td>
-          <td>${p.resultado ? p.resultado.replace("-", " – ") : "–"}</td><td>${p.cancha}</td>
+          <td>${p.resultado
+            ? (p.planilla ? `<a href="${p.planilla}" target="_blank" rel="noopener">${p.resultado.replace("-", " – ")} ↗</a>` : p.resultado.replace("-", " – "))
+            : "–"}</td><td>${p.cancha}</td>
         </tr>`).join("")}
       </tbody>
     </table></div>`).join("");

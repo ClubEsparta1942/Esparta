@@ -171,6 +171,9 @@ h2 { font-size: clamp(2rem, 4.6vw, 3.2rem); margin-bottom: 1rem; }
 .tag { font-size: .75rem; font-weight: 700; padding: .3rem .8rem; border-radius: 999px; background: var(--crema); color: var(--texto-suave); white-space: nowrap; }
 .tag--win { background: #dff5e3; color: #1d7a35; }
 .tag--loss { background: #fde3e3; color: #a42828; }
+.tag--link { text-decoration: none; transition: transform .15s, box-shadow .15s; }
+.tag--link:hover { transform: translateY(-1px); box-shadow: 0 4px 10px rgba(20, 27, 82, .15); }
+.league td a { color: var(--azul); font-weight: 700; }
 .tag--home { background: var(--amarillo-claro); color: #7a5d00; }
 
 .league { margin-top: 1rem; background: #fff; border-radius: var(--radio); padding: 1rem 1.3rem; box-shadow: var(--sombra); }

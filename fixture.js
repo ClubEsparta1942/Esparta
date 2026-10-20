@@ -2,10 +2,12 @@
 // Para cargar un resultado, escribí los puntos en "resultado" como "LOCAL-VISITANTE",
 // por ejemplo: resultado: "78-70" (primero los puntos del equipo local).
 // La web marca sola el próximo partido y si Esparta ganó o perdió.
+// Para la planilla estadística: guardá el PDF en la carpeta "planillas" y agregá
+// planilla: "planillas/nombre-del-archivo.pdf" en ese partido. La etiqueta Ganado/Perdido abre el PDF.
 const FIXTURE = [
   { jornada: 1, local: "Pacaembu", visitante: "Remeros", fecha: "2026-10-16", cancha: "Della Santa", resultado: "" },
   { jornada: 1, local: "Anastasia", visitante: "Racing", fecha: "2026-10-17", cancha: "Socios Fundadores", resultado: "" },
-  { jornada: 1, local: "Sandu", visitante: "Esparta", fecha: "2026-10-19", cancha: "Ing. L. Álvarez", resultado: "" },
+  { jornada: 1, local: "Sandu", visitante: "Esparta", fecha: "2026-10-19", cancha: "Ing. L. Álvarez", resultado: "66-73", planilla: "planillas/2026-10-19-sandu-esparta.pdf" },
   { jornada: 1, local: "Praga", visitante: "Independiente", fecha: "2026-10-20", cancha: "Della Santa", resultado: "" },
   { jornada: 1, local: "Nacional", visitante: "Bella Vista", fecha: "2026-10-21", cancha: "Coloso Tricolor", resultado: "" },
 
