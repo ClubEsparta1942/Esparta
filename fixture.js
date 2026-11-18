@@ -4,6 +4,7 @@
 // La web marca sola el próximo partido y si Esparta ganó o perdió.
 // Para la planilla estadística: guardá el PDF en la carpeta "planillas" y agregá
 // planilla: "planillas/nombre-del-archivo.pdf" en ese partido. La etiqueta Ganado/Perdido abre el PDF.
+// También sirve el link directo de la LRBS: planilla: "https://www.lrbs.com.uy/prod/1/292/ARCHIVO.pdf"
 const FIXTURE = [
   { jornada: 1, local: "Pacaembu", visitante: "Remeros", fecha: "2026-10-16", cancha: "Della Santa", resultado: "" },
   { jornada: 1, local: "Anastasia", visitante: "Racing", fecha: "2026-10-17", cancha: "Socios Fundadores", resultado: "" },
@@ -13,23 +14,23 @@ const FIXTURE = [
 
   { jornada: 2, local: "Remeros", visitante: "Racing", fecha: "2026-10-23", cancha: "M. Bellini", resultado: "" },
   { jornada: 2, local: "Nacional", visitante: "Anastasia", fecha: "2026-10-24", cancha: "Coloso Tricolor", resultado: "" },
-  { jornada: 2, local: "Esparta", visitante: "Pacaembu", fecha: "2026-10-26", cancha: "16 de Junio", resultado: "" },
+  { jornada: 2, local: "Esparta", visitante: "Pacaembu", fecha: "2026-10-26", cancha: "16 de Junio", resultado: "73-87", planilla: "https://www.lrbs.com.uy/prod/1/292/ESP.VS.PAC.26.OCTUBRE..pdf" },
   { jornada: 2, local: "Independiente", visitante: "Sandu", fecha: "2026-10-27", cancha: "Saratsola", resultado: "" },
   { jornada: 2, local: "Bella Vista", visitante: "Praga", fecha: "2026-10-27", cancha: "H. Vespa", resultado: "" },
 
   { jornada: 3, local: "Anastasia", visitante: "Remeros", fecha: "2026-10-29", cancha: "Socios Fundadores", resultado: "" },
   { jornada: 3, local: "Praga", visitante: "Nacional", fecha: "2026-10-29", cancha: "Della Santa", resultado: "" },
-  { jornada: 3, local: "Racing", visitante: "Esparta", fecha: "2026-10-30", cancha: "12 de Mayo", resultado: "" },
+  { jornada: 3, local: "Racing", visitante: "Esparta", fecha: "2026-10-30", cancha: "12 de Mayo", resultado: "93-81", planilla: "https://www.lrbs.com.uy/prod/1/292/RAC.VS.ESP.30.OCTUBRE..pdf" },
   { jornada: 3, local: "Pacaembu", visitante: "Independiente", fecha: "2026-10-31", cancha: "Novales", resultado: "" },
   { jornada: 3, local: "Sandu", visitante: "Bella Vista", fecha: "2026-11-02", cancha: "Ing. L. Álvarez", resultado: "" },
 
   { jornada: 4, local: "Praga", visitante: "Anastasia", fecha: "2026-11-04", cancha: "Della Santa", resultado: "" },
   { jornada: 4, local: "Nacional", visitante: "Sandu", fecha: "2026-11-05", cancha: "Coloso Tricolor", resultado: "" },
   { jornada: 4, local: "Bella Vista", visitante: "Pacaembu", fecha: "2026-11-05", cancha: "H. Vespa", resultado: "" },
-  { jornada: 4, local: "Esparta", visitante: "Remeros", fecha: "2026-11-06", cancha: "16 de Junio", resultado: "" },
+  { jornada: 4, local: "Esparta", visitante: "Remeros", fecha: "2026-11-06", cancha: "16 de Junio", resultado: "47-97", planilla: "https://www.lrbs.com.uy/prod/1/292/ESP.VS.REM.6.NOVIEMBRE..pdf" },
   { jornada: 4, local: "Independiente", visitante: "Racing", fecha: "2026-11-07", cancha: "Saratsola", resultado: "" },
 
-  { jornada: 5, local: "Anastasia", visitante: "Esparta", fecha: "2026-11-10", cancha: "Socios Fundadores", resultado: "" },
+  { jornada: 5, local: "Anastasia", visitante: "Esparta", fecha: "2026-11-10", cancha: "Socios Fundadores", resultado: "83-73", planilla: "https://www.lrbs.com.uy/prod/1/292/ANA.vs.ESP.10.NOVIEMBRE..pdf" },
   { jornada: 5, local: "Racing", visitante: "Bella Vista", fecha: "2026-11-10", cancha: "12 de Mayo", resultado: "" },
   { jornada: 5, local: "Pacaembu", visitante: "Nacional", fecha: "2026-11-11", cancha: "Novales", resultado: "" },
   { jornada: 5, local: "Remeros", visitante: "Independiente", fecha: "2026-11-13", cancha: "M. Bellini", resultado: "" },
